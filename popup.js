@@ -23,16 +23,34 @@ function tempFunc(event) {
         ],
         priority: 0});
 
-    $.get("http://www.feedforall.com/blog-feed.xml", function (data) {
-        $(data).find("entry").each(function () { // or "item" or whatever suits your feed
-            var el = $(this);
+    // $.get("http://www.feedforall.com/blog-feed.xml", function (data) {
+    //     $(data).find("entry").each(function () { // or "item" or whatever suits your feed
+    //         var el = $(this);
+    //
+    //         console.log("------------------------");
+    //         console.log("title      : " + el.find("title").text());
+    //         console.log("author     : " + el.find("author").text());
+    //         console.log("description: " + el.find("description").text());
+    //     });
+    // });
 
-            console.log("------------------------");
-            console.log("title      : " + el.find("title").text());
-            console.log("author     : " + el.find("author").text());
-            console.log("description: " + el.find("description").text());
-        });
-    });
+
+    console.log('zzzaaaabefore ajax');
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://www.feedforall.com/blog-feed.xml');
+    xhr.setRequestHeader("Access-Control-Allow-Origin", true);
+    xhr.withCredentials = true;
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            console.log('User\'s name is ' + xhr.responseText);
+        }
+        else {
+            console.log('Request failed.  Returned status of ' + xhr.status);
+        }
+    };
+    xhr.send();
+    console.log('after ajax');
+
 
     // window.close();
 }
