@@ -23,21 +23,16 @@ function tempFunc(event) {
         ],
         priority: 0});
 
-    // $.get("http://54.174.151.138:9090/", function (data) {
-    //     $(data).find("entry").each(function () { // or "item" or whatever suits your feed
-    //         var el = $(this);
-    //
-    //         console.log("------------------------");
-    //         console.log("title      : " + el.find("title").text());
-    //         console.log("author     : " + el.find("author").text());
-    //         console.log("description: " + el.find("description").text());
-    //     });
-    // });
+    $.get("http://www.feedforall.com/blog-feed.xml", function (data) {
+        $(data).find("entry").each(function () { // or "item" or whatever suits your feed
+            var el = $(this);
 
-    $.get("http://54.174.151.138:9090/").done(function (data) {
-        console.log(data);
+            console.log("------------------------");
+            console.log("title      : " + el.find("title").text());
+            console.log("author     : " + el.find("author").text());
+            console.log("description: " + el.find("description").text());
+        });
     });
-
 
     // window.close();
 }
