@@ -38,8 +38,9 @@ function tempFunc(event) {
     console.log('zzzaaaabefore ajax');
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'http://www.feedforall.com/blog-feed.xml');
-    xhr.setRequestHeader("Access-Control-Allow-Origin", true);
-    xhr.withCredentials = true;
+    // xhr.setRequestHeader("Access-Control-Allow-Origin", true);
+    // xhr.withCredentials = true;
+    xhr.setRequestHeader("X-My-Custom-Header", "some value");
     xhr.onload = function() {
         if (xhr.status === 200) {
             console.log('User\'s name is ' + xhr.responseText);
