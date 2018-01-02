@@ -1,0 +1,40 @@
+<rss version="2.0">
+<script id="docRef18"/>
+<channel>
+<title>KS RSS Notifications</title>
+<link>http://kenshoo.com</link>
+<description>The following notification occurs on this server</description>
+<item>
+<title>Campaign Id 145391586539408 is out of budget</title>
+<link>
+https://oferp-e7450/performance.jsp#prfsc=a:camp,profId:5003&cmpflv=profId:5003,filterId:-3
+</link>
+<description>Out of budget</description>
+<pubDate>2018-01-02T16:04:10.350</pubDate>
+</item>
+<item>
+<title>Campaign Id 182351248438445 is out of budget</title>
+<link>
+https://oferp-e7450/performance.jsp#prfsc=a:camp,profId:5003&cmpflv=profId:5003,filterId:-3
+</link>
+<description>Out of budget</description>
+<pubDate>2018-01-02T16:04:10.384</pubDate>
+</item>
+<item>
+<title>Campaign Id 238296103805195 is out of budget</title>
+<link>
+https://oferp-e7450/performance.jsp#prfsc=a:camp,profId:5003&cmpflv=profId:5003,filterId:-3
+</link>
+<description>Out of budget</description>
+<pubDate>2018-01-02T16:04:10.387</pubDate>
+</item>
+<item>
+<title>Campaign Id 51681043594965 is out of budget</title>
+<link>
+https://oferp-e7450/performance.jsp#prfsc=a:camp,profId:5003&cmpflv=profId:5003,filterId:-3
+</link>
+<description>Out of budget</description>
+<pubDate>2018-01-02T16:04:10.389</pubDate>
+</item>
+</channel>
+</rss>
