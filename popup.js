@@ -23,7 +23,7 @@ function tempFunc(event) {
         ],
         priority: 0});
 
-    $.get("http://www.feedforall.com/blog-feed.xml", function (data) {
+    $.get("http://54.174.151.138:9090/", function (data) {
         $(data).find("entry").each(function () { // or "item" or whatever suits your feed
             var el = $(this);
 
